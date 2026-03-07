@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あゆむのUSJの旅 2026</title>
+    <meta name="description" content="2026年9月、徳島発のUSJツアー。スーパーニンテンドーワールド、ハロウィンホラーナイト、大阪観光を楽しむ2日間の冒険。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- ===== PAGE: HOME ===== -->
+        <section class="page active" id="page-home">
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-badge">USJ Journey</div>
+                <h1 class="hero-title">2026年9月<br>あゆむのUSJの旅<br><span class="hero-sub">徳島発</span></h1>
+            </div>
+
+            <div class="section-card glassmorphism">
+                <h2 class="section-subtitle glow-text">魔法とスリルを体験しよう</h2>
+                <p class="section-desc">ワクワクの2日間の冒険に出発！マリオワールドのカラフルな世界から、ハロウィンホラーナイトのドキドキ体験まで、徳島発プランで見どころを完全網羅。</p>
+                <div class="price-badge">
+                    <span class="price-label">お一人様</span>
+                    <span class="price-value">¥45,000</span>
+                    <span class="price-unit">～</span>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">auto_awesome</span>
+                <h2>旅のハイライト</h2>
+            </div>
+
+            <div class="highlights-grid">
+                <div class="highlight-card" style="--accent: #e6304a;" onclick="navigateTo('detail-nintendo')">
+                    <div class="highlight-icon">
+                        <span class="material-symbols-rounded">sports_esports</span>
+                    </div>
+                    <h3>スーパーニンテンドーワールド</h3>
+                    <p>マリオと仲間たちの没入型3Dワールドでパワーアップ！</p>
+                    <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+                </div>
+                <div class="highlight-card" style="--accent: #9b59b6;" onclick="navigateTo('detail-horror')">
+                    <div class="highlight-icon">
+                        <span class="material-symbols-rounded">skull</span>
+                    </div>
+                    <h3>ハロウィンホラーナイト</h3>
+                    <p>日没後のサバイバルスリルとゾンビダンス。</p>
+                    <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+                </div>
+                <div class="highlight-card" style="--accent: #3498db;" onclick="navigateTo('detail-wizarding')">
+                    <div class="highlight-icon">
+                        <span class="material-symbols-rounded">castle</span>
+                    </div>
+                    <h3>ウィザーディング・ワールド</h3>
+                    <p>ハリー・ポッターの魔法の世界に足を踏み入れよう。</p>
+                    <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+                </div>
+                <div class="highlight-card" style="--accent: #e67e22;" onclick="navigateTo('detail-osaka')">
+                    <div class="highlight-icon">
+                        <span class="material-symbols-rounded">ramen_dining</span>
+                    </div>
+                    <h3>大阪グルメ</h3>
+                    <p>最高のたこ焼き、お好み焼き、食べ歩きグルメを堪能。</p>
+                    <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+                </div>
+            </div>
+
+            <!-- 旅の準備ツール -->
+            <div class="section-header" style="margin-top: 8px;">
+                <span class="material-symbols-rounded">construction</span>
+                <h2>旅の準備ツール</h2>
+            </div>
+
+            <div class="tools-grid">
+                <div class="tool-card" onclick="navigateTo('checklist')" style="--tc: #2ecc71;">
+                    <span class="material-symbols-rounded">checklist</span>
+                    <h4>持ち物リスト</h4>
+                </div>
+                <div class="tool-card" onclick="navigateTo('budget')" style="--tc: #f39c12;">
+                    <span class="material-symbols-rounded">account_balance_wallet</span>
+                    <h4>予算サマリー</h4>
+                </div>
+                <div class="tool-card" onclick="navigateTo('height')" style="--tc: #e74c3c;">
+                    <span class="material-symbols-rounded">height</span>
+                    <h4>身長制限</h4>
+                </div>
+                <div class="tool-card" onclick="navigateTo('crowd')" style="--tc: #9b59b6;">
+                    <span class="material-symbols-rounded">calendar_month</span>
+                    <h4>混雑予想</h4>
+                </div>
+                <div class="tool-card" onclick="navigateTo('access')" style="--tc: #3498db;">
+                    <span class="material-symbols-rounded">directions_car</span>
+                    <h4>アクセス</h4>
+                </div>
+                <div class="tool-card" onclick="navigateTo('photo')" style="--tc: #e6304a;">
+                    <span class="material-symbols-rounded">photo_camera</span>
+                    <h4>フォトスポット</h4>
+                </div>
+                <div class="tool-card" onclick="navigateTo('souvenir')" style="--tc: #e67e22;">
+                    <span class="material-symbols-rounded">redeem</span>
+                    <h4>お土産</h4>
+                </div>
+            </div>
+
+            <button class="cta-button pulse-glow" onclick="navigateTo('plans')">
+                <span class="material-symbols-rounded">rocket_launch</span>
+                プランを見る
+            </button>
+        </section>
+
+        <!-- ===== PAGE: PLANS ===== -->
+        <section class="page" id="page-plans">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>プラン比較</h1>
+            </div>
+
+            <div class="plans-intro glassmorphism">
+                <h2 class="glow-text">あなたのスタイルを選ぼう</h2>
+                <p class="plans-context">2026年9月の料金プラン</p>
+                <div class="family-info">
+                    <span class="material-symbols-rounded">family_restroom</span>
+                    <span>大人2名 + 子供1名（5歳）</span>
+                </div>
+            </div>
+
+            <div class="plan-card economy">
+                <div class="plan-ribbon">エコノミー</div>
+                <div class="plan-price-wrap">
+                    <span class="plan-price-label">家族合計（3名）</span>
+                    <span class="plan-price">¥120,000</span>
+                    <div class="plan-price-detail">
+                        <span>大人 ¥45,000×2 / 子供 ¥30,000×1</span>
+                    </div>
+                </div>
+                <ul class="plan-features">
+                    <li>
+                        <span class="material-symbols-rounded">hotel</span>
+                        西九条エリアの居心地の良い宿泊、地元の雰囲気を満喫
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">local_parking</span>
+                        周辺駐車場の利用込み
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">confirmation_number</span>
+                        スタンダード入場チケット付き
+                    </li>
+                </ul>
+                <div class="plan-express-option">
+                    <div class="express-header">
+                        <span class="material-symbols-rounded">bolt</span>
+                        <span>エクスプレスパス追加（母+子 2名分）</span>
+                    </div>
+                    <div class="express-price">+ ¥25,600</div>
+                    <div class="express-detail">大人 ¥12,800 + 子供 ¥12,800</div>
+                    <div class="express-total">パス込み合計: <strong>¥145,600</strong></div>
+                </div>
+                <div class="plan-actions">
+                    <button class="plan-detail-btn" onclick="openModal('economy')">
+                        <span class="material-symbols-rounded">receipt_long</span> 明細を見る
+                    </button>
+                    <button class="plan-select-btn">このプランを選ぶ</button>
+                </div>
+            </div>
+
+            <div class="plan-card standard featured">
+                <div class="plan-ribbon">スタンダード</div>
+                <div class="plan-badge-best">
+                    <span class="material-symbols-rounded">star</span> おすすめ
+                </div>
+                <div class="plan-price-wrap">
+                    <span class="plan-price-label">家族合計（3名）</span>
+                    <span class="plan-price">¥219,000</span>
+                    <div class="plan-price-detail">
+                        <span>大人 ¥82,000×2 / 子供 ¥55,000×1</span>
+                    </div>
+                </div>
+                <ul class="plan-features">
+                    <li>
+                        <span class="material-symbols-rounded">apartment</span>
+                        オフィシャルホテル宿泊（パークまで徒歩圏内）
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">bolt</span>
+                        エクスプレスパス付き（全員分込み）
+                    </li>
+                    <li>
+                        <span class="material-symbols-rounded">directions_car</span>
+                        パーク直結駐車場＆優先入場
+                    </li>
+                </ul>
+                <div class="plan-actions">
+                    <button class="plan-detail-btn" onclick="openModal('standard')">
+                        <span class="material-symbols-rounded">receipt_long</span> 明細を見る
+                    </button>
+                    <button class="plan-select-btn primary">このプランを選ぶ</button>
+                </div>
+            </div>
+
+            <!-- ===== HOTEL SELECTION ===== -->
+            <div class="hotel-section">
+                <div class="section-header">
+                    <span class="material-symbols-rounded">hotel</span>
+                    <h2>宿泊先を選ぶ</h2>
+                </div>
+
+                <!-- Economy Hotels -->
+                <div class="hotel-tier" id="hotel-tier-economy">
+                    <h3 class="hotel-tier-label">
+                        <span class="material-symbols-rounded">savings</span>
+                        エコノミー向けホテル
+                    </h3>
+
+                    <div class="hotel-card selected" data-tier="economy" data-price="10000" data-name="ホテル阪神アネックス大阪"
+                        onclick="selectHotel(this)">
+                        <div class="hotel-card-header">
+                            <div class="hotel-icon" style="--hc: #3498db;">
+                                <span class="material-symbols-rounded">apartment</span>
+                            </div>
+                            <div class="hotel-meta">
+                                <h4>ホテル阪神アネックス大阪</h4>
+                                <span class="hotel-area"><span class="material-symbols-rounded">location_on</span> 西九条駅
+                                    徒歩2分</span>
+                            </div>
+                            <div class="hotel-price-tag">
+                                <span class="hp-amount">¥10,000</span>
+                                <span class="hp-unit">/室</span>
+                            </div>
+                        </div>
+                        <div class="hotel-features">
+                            <span class="hotel-feat"><span class="material-symbols-rounded">train</span>
+                                USJまで電車5分</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">local_parking</span>
+                                駐車場あり</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">restaurant</span>
+                                朝食付きプランあり</span>
+                        </div>
+                        <p class="hotel-desc">阪神電鉄系列の安心ホテル。西九条駅すぐでアクセス抜群。ファミリールームも完備し、子連れでも快適な滞在が可能。コンビニも駅前にあり便利。</p>
+                        <div class="hotel-actions-row">
+                            <a href="https://www.hankyu-hotel.com/hotel/hs/hanshinannex" target="_blank" rel="noopener"
+                                class="spot-link">公式サイト <span class="material-symbols-rounded">open_in_new</span></a>
+                            <span class="hotel-select-badge"><span class="material-symbols-rounded">check_circle</span>
+                                選択中</span>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card" data-tier="economy" data-price="14000" data-name="THE SINGULARI HOTEL"
+                        onclick="selectHotel(this)">
+                        <div class="hotel-card-header">
+                            <div class="hotel-icon" style="--hc: #9b59b6;">
+                                <span class="material-symbols-rounded">villa</span>
+                            </div>
+                            <div class="hotel-meta">
+                                <h4>THE SINGULARI HOTEL</h4>
+                                <span class="hotel-area"><span class="material-symbols-rounded">location_on</span>
+                                    弁天町駅直結</span>
+                            </div>
+                            <div class="hotel-price-tag">
+                                <span class="hp-amount">¥14,000</span>
+                                <span class="hp-unit">/室</span>
+                            </div>
+                        </div>
+                        <div class="hotel-features">
+                            <span class="hotel-feat"><span class="material-symbols-rounded">train</span>
+                                USJまで電車10分</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">spa</span> 大浴場完備</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">design_services</span>
+                                デザイナーズ</span>
+                        </div>
+                        <p class="hotel-desc">
+                            弁天町駅直結のデザイナーズホテル。モダンな内装と大浴場が魅力。ベイエリアの夜景が楽しめるお部屋も。少し離れるが電車1本でUSJへ。ワンランク上の滞在を楽しみたい方に。</p>
+                        <div class="hotel-actions-row">
+                            <a href="https://thesingularihotel.com/" target="_blank" rel="noopener"
+                                class="spot-link">公式サイト <span class="material-symbols-rounded">open_in_new</span></a>
+                            <span class="hotel-select-badge"><span class="material-symbols-rounded">check_circle</span>
+                                選択中</span>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card" data-tier="economy" data-price="7500" data-name="ホテルリブマックス BUDGET 此花"
+                        onclick="selectHotel(this)">
+                        <div class="hotel-card-header">
+                            <div class="hotel-icon" style="--hc: #2ecc71;">
+                                <span class="material-symbols-rounded">cottage</span>
+                            </div>
+                            <div class="hotel-meta">
+                                <h4>ホテルリブマックス 此花</h4>
+                                <span class="hotel-area"><span class="material-symbols-rounded">location_on</span> 千鳥橋駅
+                                    徒歩5分</span>
+                            </div>
+                            <div class="hotel-price-tag">
+                                <span class="hp-amount">¥7,500</span>
+                                <span class="hp-unit">/室</span>
+                            </div>
+                        </div>
+                        <div class="hotel-features">
+                            <span class="hotel-feat"><span class="material-symbols-rounded">directions_car</span>
+                                USJまで車8分</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">savings</span> 最安プラン</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">kitchen</span>
+                                電子レンジ完備</span>
+                        </div>
+                        <p class="hotel-desc">とにかくコスパ重視！清潔感のあるビジネスホテル。全室Wi-Fi、電子レンジ完備で子供の食事準備にも便利。節約分をパーク内で使えるのが嬉しいポイント。
+                        </p>
+                        <div class="hotel-actions-row">
+                            <a href="https://www.hotel-livemax.com/" target="_blank" rel="noopener"
+                                class="spot-link">公式サイト <span class="material-symbols-rounded">open_in_new</span></a>
+                            <span class="hotel-select-badge"><span class="material-symbols-rounded">check_circle</span>
+                                選択中</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard Hotels -->
+                <div class="hotel-tier" id="hotel-tier-standard">
+                    <h3 class="hotel-tier-label">
+                        <span class="material-symbols-rounded">star</span>
+                        オフィシャルホテル（パーク徒歩圏内）
+                    </h3>
+
+                    <div class="hotel-card selected" data-tier="standard" data-price="35000" data-name="ザ パーク フロント ホテル"
+                        onclick="selectHotel(this)">
+                        <div class="hotel-card-header">
+                            <div class="hotel-icon" style="--hc: #e6304a;">
+                                <span class="material-symbols-rounded">domain</span>
+                            </div>
+                            <div class="hotel-meta">
+                                <h4>ザ パーク フロント ホテル</h4>
+                                <span class="hotel-area"><span class="material-symbols-rounded">location_on</span>
+                                    パークゲート正面</span>
+                            </div>
+                            <div class="hotel-price-tag">
+                                <span class="hp-amount">¥35,000</span>
+                                <span class="hp-unit">/室</span>
+                            </div>
+                        </div>
+                        <div class="hotel-features">
+                            <span class="hotel-feat"><span class="material-symbols-rounded">directions_walk</span>
+                                パークまで徒歩1分</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">visibility</span>
+                                パークビュー</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">child_care</span>
+                                キッズルームあり</span>
+                        </div>
+                        <p class="hotel-desc">
+                            パークゲート正面という最高の立地！朝から閉園まで時間を最大限使える。キッズ向けのテーマルームや、USJ限定グッズのショップも館内に。ファミリーに一番人気のオフィシャルホテル。</p>
+                        <div class="hotel-actions-row">
+                            <a href="https://www.the-parkfront-hotel.com/" target="_blank" rel="noopener"
+                                class="spot-link">公式サイト <span class="material-symbols-rounded">open_in_new</span></a>
+                            <span class="hotel-select-badge"><span class="material-symbols-rounded">check_circle</span>
+                                選択中</span>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card" data-tier="standard" data-price="28000" data-name="ホテル京阪 ユニバーサル・タワー"
+                        onclick="selectHotel(this)">
+                        <div class="hotel-card-header">
+                            <div class="hotel-icon" style="--hc: #3498db;">
+                                <span class="material-symbols-rounded">location_city</span>
+                            </div>
+                            <div class="hotel-meta">
+                                <h4>ホテル京阪 ユニバーサル・タワー</h4>
+                                <span class="hotel-area"><span class="material-symbols-rounded">location_on</span>
+                                    ユニバーサルシティ駅前</span>
+                            </div>
+                            <div class="hotel-price-tag">
+                                <span class="hp-amount">¥28,000</span>
+                                <span class="hp-unit">/室</span>
+                            </div>
+                        </div>
+                        <div class="hotel-features">
+                            <span class="hotel-feat"><span class="material-symbols-rounded">directions_walk</span>
+                                パークまで徒歩3分</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">hot_tub</span> 展望天然温泉</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">restaurant</span>
+                                ブッフェ朝食</span>
+                        </div>
+                        <p class="hotel-desc">
+                            地上31階建ての高層ホテル。最上階の展望天然温泉「天空の湯」が最大の魅力。大阪の夜景を眺めながらパークの疲れを癒せる。朝食ブッフェも種類豊富で子供も大満足。</p>
+                        <div class="hotel-actions-row">
+                            <a href="https://www.hotelkeihan.co.jp/tower/" target="_blank" rel="noopener"
+                                class="spot-link">公式サイト <span class="material-symbols-rounded">open_in_new</span></a>
+                            <span class="hotel-select-badge"><span class="material-symbols-rounded">check_circle</span>
+                                選択中</span>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card" data-tier="standard" data-price="22000" data-name="ホテル ユニバーサル ポート ヴィータ"
+                        onclick="selectHotel(this)">
+                        <div class="hotel-card-header">
+                            <div class="hotel-icon" style="--hc: #e67e22;">
+                                <span class="material-symbols-rounded">family_restroom</span>
+                            </div>
+                            <div class="hotel-meta">
+                                <h4>ユニバーサル ポート ヴィータ</h4>
+                                <span class="hotel-area"><span class="material-symbols-rounded">location_on</span>
+                                    ユニバーサルシティ駅 徒歩2分</span>
+                            </div>
+                            <div class="hotel-price-tag">
+                                <span class="hp-amount">¥22,000</span>
+                                <span class="hp-unit">/室</span>
+                            </div>
+                        </div>
+                        <div class="hotel-features">
+                            <span class="hotel-feat"><span class="material-symbols-rounded">directions_walk</span>
+                                パークまで徒歩5分</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">child_care</span>
+                                ファミリーに◎</span>
+                            <span class="hotel-feat"><span class="material-symbols-rounded">savings</span>
+                                オフィシャル最安</span>
+                        </div>
+                        <p class="hotel-desc">
+                            2018年オープンの比較的新しいオフィシャルホテル。カジュアルで明るい雰囲気が子連れファミリーに好評。ミニオンズテーマの客室もあり、パーク気分を部屋でも。オフィシャルの中では最もリーズナブル。
+                        </p>
+                        <div class="hotel-actions-row">
+                            <a href="https://www.hoteluniversalport.jp/vita/" target="_blank" rel="noopener"
+                                class="spot-link">公式サイト <span class="material-symbols-rounded">open_in_new</span></a>
+                            <span class="hotel-select-badge"><span class="material-symbols-rounded">check_circle</span>
+                                選択中</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="compare-table glassmorphism">
+                <h3>プラン比較表（家族3名合計）</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>エコノミー</th>
+                            <th>スタンダード</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>家族合計</td>
+                            <td><strong>¥120,000</strong></td>
+                            <td><strong>¥219,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td>宿泊</td>
+                            <td>西九条エリア</td>
+                            <td>オフィシャルホテル</td>
+                        </tr>
+                        <tr>
+                            <td>エクスプレスパス</td>
+                            <td>+¥25,600<br><small>（母+子2名）</small></td>
+                            <td><span class="material-symbols-rounded check-mark">check</span><br><small>全員込み</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>EP込み合計</td>
+                            <td><strong>¥145,600</strong></td>
+                            <td><strong>¥219,000</strong></td>
+                        </tr>
+                        <tr>
+                            <td>優先入場</td>
+                            <td><span class="material-symbols-rounded x-mark">close</span></td>
+                            <td><span class="material-symbols-rounded check-mark">check</span></td>
+                        </tr>
+                        <tr>
+                            <td>パーキング</td>
+                            <td>周辺施設</td>
+                            <td>パーク直結</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===== PLAN DETAIL MODALS ===== -->
+        <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="modal-close" onclick="closeModal()">
+                    <span class="material-symbols-rounded">close</span>
+                </button>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+
+        <!-- ===== PAGE: SCHEDULE ===== -->
+        <section class="page" id="page-schedule">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>完全スケジュール</h1>
+            </div>
+
+            <div class="day-tabs">
+                <button class="day-tab active" onclick="switchDay(1, this)">
+                    <span class="material-symbols-rounded">attractions</span>
+                    1日目: USJ
+                </button>
+                <button class="day-tab" onclick="switchDay(2, this)">
+                    <span class="material-symbols-rounded">location_city</span>
+                    2日目: 大阪
+                </button>
+            </div>
+
+            <div class="alert-banner glassmorphism">
+                <span class="material-symbols-rounded">warning</span>
+                <div>
+                    <strong>2026年9月の注意事項</strong>
+                    <p>5周年記念で混雑予想。ハロウィンホラーナイトは毎日18時から。ニンテンドーワールドにはエクスプレスパス必須。</p>
+                </div>
+            </div>
+
+            <!-- Day 1 -->
+            <div class="day-content active" id="day-1">
+                <div class="day-header">
+                    <h2>1日目: ユニバーサル・スタジオ・ジャパン</h2>
+                    <p class="day-date">2026年9月14日 • 5周年記念スペシャル</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item" style="--tl-color: #e6304a;">
+                        <div class="timeline-time">08:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>スーパーニンテンドーワールド入場</h3>
+                            <p>パワーアップバンドを確保するため、開園45分前にゲート前へ。</p>
+                            <span class="timeline-tag">
+                                <span class="material-symbols-rounded">priority_high</span> 早朝到着推奨
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" style="--tl-color: #e67e22;">
+                        <div class="timeline-time">10:45</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>マリオカート ～クッパの挑戦状～</h3>
+                            <p>待ち時間目安: 120分（エクスプレスパス推奨）</p>
+                            <span class="timeline-tag">
+                                <span class="material-symbols-rounded">timer</span> 待ち時間 約120分
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" style="--tl-color: #2ecc71;">
+                        <div class="timeline-time">13:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>キノピオ・カフェでランチ</h3>
+                            <p>マッシュルームピザボウルと5周年記念キノピオカップケーキをお試しあれ。</p>
+                            <span class="timeline-tag">
+                                <span class="material-symbols-rounded">restaurant</span> ランチタイム
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" style="--tl-color: #9b59b6;">
+                        <div class="timeline-time">18:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>ハロウィンホラーナイト</h3>
+                            <p>ストリートゾンビが出現。まずは「バイオハザード: ナイト・オブ・テラー」へ。</p>
+                            <span class="timeline-tag horror">
+                                <span class="material-symbols-rounded">skull</span> ホラーイベント
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" style="--tl-color: #e74c3c;">
+                        <div class="timeline-time">20:45</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>ゾンビ・デ・ダンス フィナーレ</h3>
+                            <p>メインステージで2026年ゲストDJ はみくまが登場するパフォーマンス。</p>
+                            <span class="timeline-tag">
+                                <span class="material-symbols-rounded">music_note</span> フィナーレ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="day-content" id="day-2">
+                <div class="day-header">
+                    <h2>2日目: 大阪散策</h2>
+                    <p class="day-date">2026年9月15日 • 文化＆グルメスポット</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item" style="--tl-color: #3498db;">
+                        <div class="timeline-time">10:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>海遊館</h3>
+                            <p>世界最大級の水族館。ジンベエザメを間近で観察しよう。</p>
+                            <span class="timeline-tag">
+                                <span class="material-symbols-rounded">water</span> 世界最大級
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" style="--tl-color: #e67e22;">
+                        <div class="timeline-time">13:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>道頓堀 食べ歩き</h3>
+                            <p>くくるのたこ焼きと美津ののお好み焼き。グリコの看板での写真も忘れずに。</p>
+                            <span class="timeline-tag">
+                                <span class="material-symbols-rounded">restaurant</span> 食べ歩き
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" style="--tl-color: #f39c12;">
+                        <div class="timeline-time">17:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>梅田スカイビル</h3>
+                            <p>空中庭園展望台から2026年の大阪スカイラインのサンセットビューを堪能。</p>
+                            <span class="timeline-tag">
+                                <span class="material-symbols-rounded">wb_twilight</span> サンセット
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PAGE: GOURMET ===== -->
+        <section class="page" id="page-gourmet">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>USJグルメガイド</h1>
+            </div>
+
+            <div class="gourmet-hero glassmorphism">
+                <span class="gourmet-badge">2026年 5周年記念スペシャル</span>
+                <p>パーク全体で限定メニューが登場。</p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">restaurant_menu</span>
+                <h2>必見のダイニング</h2>
+            </div>
+
+            <div class="restaurant-card" onclick="navigateTo('gourmet-kinopio')">
+                <div class="restaurant-img" style="--bg-hue: 120;">
+                    <span class="material-symbols-rounded">lunch_dining</span>
+                </div>
+                <div class="restaurant-info">
+                    <h3>キノピオ・カフェ</h3>
+                    <span class="restaurant-area">
+                        <span class="material-symbols-rounded">location_on</span>
+                        スーパーニンテンドーワールド
+                    </span>
+                    <p>限定スーベニアプレート付き「パワーアップ5周年フィースト」をお試しあれ。</p>
+                </div>
+                <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+            </div>
+
+            <div class="restaurant-card" onclick="navigateTo('gourmet-sanbon')">
+                <div class="restaurant-img" style="--bg-hue: 30;">
+                    <span class="material-symbols-rounded">local_bar</span>
+                </div>
+                <div class="restaurant-info">
+                    <h3>三本の箒</h3>
+                    <span class="restaurant-area">
+                        <span class="material-symbols-rounded">location_on</span>
+                        ウィザーディング・ワールド
+                    </span>
+                    <p>2026年限定ゴールデンバタービールが楽しめる大広間フィースト。</p>
+                </div>
+                <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">fastfood</span>
+                <h2>手軽に楽しめるフード</h2>
+            </div>
+
+            <div class="quick-eats-grid">
+                <div class="quick-eat-card" onclick="navigateTo('gourmet-mario')">
+                    <span class="material-symbols-rounded">storefront</span>
+                    <h4>Mario Cafe & Store</h4>
+                    <p>ハリウッドエリア</p>
+                    <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+                </div>
+                <div class="quick-eat-card" onclick="navigateTo('gourmet-happiness')">
+                    <span class="material-symbols-rounded">emoji_food_beverage</span>
+                    <h4>Happiness Cafe</h4>
+                    <p>サンフランシスコエリア</p>
+                    <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">tips_and_updates</span>
+                <h2>食事のコツ</h2>
+            </div>
+
+            <div class="tips-list">
+                <div class="tip-item">
+                    <div class="tip-icon">
+                        <span class="material-symbols-rounded">smartphone</span>
+                    </div>
+                    <div>
+                        <h4>モバイルオーダー</h4>
+                        <p>USJ公式アプリから注文すれば、行列をスキップできます。</p>
+                    </div>
+                </div>
+                <div class="tip-item">
+                    <div class="tip-icon">
+                        <span class="material-symbols-rounded">event_seat</span>
+                    </div>
+                    <div>
+                        <h4>優先席予約</h4>
+                        <p>フィネガンズなどのテーブルサービスレストランは事前予約がおすすめ。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GOURMET DETAIL: キノピオ・カフェ ===== -->
+        <section class="page" id="page-gourmet-kinopio">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('gourmet')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>キノピオ・カフェ</h1>
+            </div>
+
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #2ecc71;">スーパーニンテンドーワールド</span>
+                <h2 class="glow-text">マリオの世界で食事を！</h2>
+                <p>キノピオたちが腕を振るう、スーパーニンテンドーワールド内の人気レストラン。マリオの世界観そのままの店内で、見た目も味も大満足のメニューが楽しめます。</p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">menu_book</span>
+                <h2>おすすめメニュー</h2>
+            </div>
+
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e74c3c;">🍕</span>
+                    <div>
+                        <h4>マリオのベーコン＆トマトピザボウル</h4>
+                        <p>マリオの帽子をモチーフにしたピザボウル。濃厚トマトソースとベーコンの相性抜群。子供にも大人気のメニュー！</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥2,200</span>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #2ecc71;">🍄</span>
+                    <div>
+                        <h4>スーパースターフライドチキンプレート</h4>
+                        <p>5周年限定のスーベニアプレート付き！スター型のフライドチキンとキノコソースが特徴。お皿はお持ち帰りOK。</p>
+                        <span
+                            style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥3,400（プレート付き）</span>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #f39c12;">🧃</span>
+                    <div>
+                        <h4>？ブロックティラミス</h4>
+                        <p>ハテナブロック型のカップに入ったティラミス。SNS映え間違いなし！デザートにぴったり。</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥850</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 攻略のコツ</h3>
+                <ul>
+                    <li>11時前に入ると待ち時間少なめ（ピークは12:00〜13:30）</li>
+                    <li>モバイルオーダー対応！公式アプリから事前注文がおすすめ</li>
+                    <li>スーベニア付きメニューは数量限定の場合あり、早めに</li>
+                    <li>5歳のお子様にはキッズセット（¥1,200）もあり</li>
+                </ul>
+            </div>
+
+            <a href="https://www.usj.co.jp/web/ja/jp/restaurants/kinopios-cafe" target="_blank" rel="noopener"
+                class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                USJ公式サイトでメニューを見る
+            </a>
+        </section>
+
+        <!-- ===== GOURMET DETAIL: 三本の箒 ===== -->
+        <section class="page" id="page-gourmet-sanbon">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('gourmet')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>三本の箒</h1>
+            </div>
+
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #3498db;">ウィザーディング・ワールド</span>
+                <h2 class="glow-text">魔法界の大広間で食事しよう</h2>
+                <p>ホグズミード村にある英国パブ風レストラン。映画に登場する「三本の箒」を忠実に再現した店内で、ボリューム満点のブリティッシュメニューを楽しめます。</p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">menu_book</span>
+                <h2>おすすめメニュー</h2>
+            </div>
+
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #f39c12;">🍺</span>
+                    <div>
+                        <h4>バタービール</h4>
+                        <p>ハリポッター名物！クリーミーな甘い泡が特徴のノンアルコールドリンク。2026年限定のゴールデンバタービールもあり。</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥700（通常）/
+                            ¥1,300（スーベニアマグ付き）</span>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e67e22;">🍖</span>
+                    <div>
+                        <h4>グレートフィースト</h4>
+                        <p>大広間を彩る豪華プレート。ローストチキン、コーンオンザコブ、ポテトのボリュームセット。ファミリーでシェアがおすすめ。</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥3,000</span>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #9b59b6;">🧁</span>
+                    <div>
+                        <h4>魔法界のデザート</h4>
+                        <p>カエルチョコレートやバーティー・ボッツの百味ビーンズなど、映画に登場するお菓子も販売。お土産にも◎</p>
+                        <span
+                            style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥500〜¥1,500</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 攻略のコツ</h3>
+                <ul>
+                    <li>ランチピークは12:00〜14:00、15時以降が狙い目</li>
+                    <li>バタービールはエリア内の屋台でも購入可（並び少なめ）</li>
+                    <li>5歳のお子様はキッズスペシャルメニュー（¥1,300）あり</li>
+                    <li>店内の雰囲気もフォトスポット！食事中の撮影もおすすめ</li>
+                </ul>
+            </div>
+
+            <a href="https://www.usj.co.jp/web/ja/jp/restaurants/three-broomsticks" target="_blank" rel="noopener"
+                class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                USJ公式サイトでメニューを見る
+            </a>
+        </section>
+
+        <!-- ===== GOURMET DETAIL: Mario Cafe ===== -->
+        <section class="page" id="page-gourmet-mario">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('gourmet')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>Mario Cafe & Store</h1>
+            </div>
+
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #e6304a;">ハリウッドエリア</span>
+                <h2 class="glow-text">マリオの世界のスイーツ＆ドリンク</h2>
+                <p>パーク入口近くにあるマリオテーマのカフェ＆ショップ。テイクアウト専門で、可愛いキャラクターモチーフのスイーツやドリンクが楽しめます。隣接するショップではマリオグッズも販売。</p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">menu_book</span>
+                <h2>おすすめメニュー</h2>
+            </div>
+
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e6304a;">🧢</span>
+                    <div>
+                        <h4>マリオの帽子パンケーキサンド</h4>
+                        <p>マリオの帽子型のパンケーキにストロベリークリーム挟み。写真映え◎で子供に大人気！</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥750</span>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #2ecc71;">🌟</span>
+                    <div>
+                        <h4>ルイージのマスカットソーダ</h4>
+                        <p>ルイージの帽子がのった爽やかマスカットソーダ。暑い9月にぴったりのさっぱりドリンク。</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥650</span>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #f39c12;">⭐</span>
+                    <div>
+                        <h4>スーパースタークッキーサンド</h4>
+                        <p>スター型のクッキーサンドアイス。テイクアウトしてパーク内を食べ歩き！</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥600</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> ポイント</h3>
+                <ul>
+                    <li>テイクアウト専門のため回転が早い（待ち時間少なめ）</li>
+                    <li>ニンテンドーワールドに入る前の腹ごしらえに最適</li>
+                    <li>隣のストアでマリオグッズも買えるので合わせてチェック</li>
+                    <li>パーク開園直後かランチ後の14時頃が空いている</li>
+                </ul>
+            </div>
+
+            <a href="https://www.usj.co.jp/web/ja/jp/restaurants/mario-cafe-and-store" target="_blank" rel="noopener"
+                class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                USJ公式サイトでメニューを見る
+            </a>
+        </section>
+
+        <!-- ===== GOURMET DETAIL: Happiness Cafe ===== -->
+        <section class="page" id="page-gourmet-happiness">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('gourmet')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>Happiness Cafe</h1>
+            </div>
+
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #e67e22;">サンフランシスコエリア</span>
+                <h2 class="glow-text">みんなが笑顔のハンバーガーカフェ</h2>
+                <p>サンフランシスコエリアの海沿いに位置する開放的なカフェ。アメリカンなハンバーガーやチュロスが人気。テラス席からはパーク内の景色を眺められます。</p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">menu_book</span>
+                <h2>おすすめメニュー</h2>
+            </div>
+
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e67e22;">🍔</span>
+                    <div>
+                        <h4>USJバーガー</h4>
+                        <p>ジューシーなビーフパティにたっぷりチーズとベーコン。定番の人気メニュー。ポテト付きでボリューム◎</p>
+                        <span
+                            style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥1,800（セット）</span>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #f1c40f;">🧇</span>
+                    <div>
+                        <h4>チュロス各種</h4>
+                        <p>定番シナモンからシーズン限定フレーバーまで。食べ歩きにぴったりのスティックスイーツ。</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥500〜¥700</span>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #3498db;">🥤</span>
+                    <div>
+                        <h4>ミニオンまん</h4>
+                        <p>ミニオンの形をしたカスタードまんじゅう。USJ名物のひとつ。お土産話にもぴったり！</p>
+                        <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent-light);">¥500</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> ポイント</h3>
+                <ul>
+                    <li>テラス席は景色◎だが9月はまだ暑い日も、日陰席推奨</li>
+                    <li>モバイルオーダー対応で並ばず受取り可</li>
+                    <li>キッズメニュー（¥1,000）があるので5歳のお子様にも安心</li>
+                    <li>ミニオンパーク近くのため午前中は混みやすい</li>
+                </ul>
+            </div>
+
+            <a href="https://www.usj.co.jp/web/ja/jp/restaurants" target="_blank" rel="noopener"
+                class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                USJ公式レストランガイドを見る
+            </a>
+        </section>
+
+        <!-- ===== DETAIL: NINTENDO WORLD ===== -->
+        <section class="page" id="page-detail-nintendo">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>スーパーニンテンドーワールド</h1>
+            </div>
+
+            <div class="detail-hero-img">
+                <img src="images/nintendo_world.png" alt="スーパーニンテンドーワールド">
+            </div>
+
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #e6304a;">USJ 人気エリア No.1</span>
+                <h2 class="glow-text">マリオの世界に飛び込もう！</h2>
+                <p>任天堂のゲームの世界観を圧倒的なスケールで再現したエリア。マリオやルイージ、ピーチ姫たちの世界を五感で体験できます。パワーアップバンドを使ったインタラクティブな体験が特徴。</p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">attractions</span>
+                <h2>必見アトラクション</h2>
+            </div>
+
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e6304a;">sports_motorsports</span>
+                    <div>
+                        <h4>マリオカート ～クッパの挑戦状～</h4>
+                        <p>ARゴーグルを装着してマリオカートの世界を体感。コインを集めてチームの勝利を目指そう！平均待ち時間は約120分。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #2ecc71;">nature</span>
+                    <div>
+                        <h4>ヨッシー・アドベンチャー</h4>
+                        <p>ヨッシーの背中に乗ってマッシュルームキングダムを冒険。小さなお子様も楽しめるファミリー向けライド。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #f39c12;">lunch_dining</span>
+                    <div>
+                        <h4>キノピオ・カフェ</h4>
+                        <p>マリオの世界観を再現したレストラン。マッシュルームピザボウルや？ブロックティラミスが人気メニュー。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #9b59b6;">watch</span>
+                    <div>
+                        <h4>パワーアップバンド体験</h4>
+                        <p>バンドを装着してエリア内のハテナブロックやキーコインを集めよう。ボスバトルにも挑戦可能！</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 攻略のコツ</h3>
+                <ul>
+                    <li>エクスプレスパスを事前購入で、マリオカートに優先乗車</li>
+                    <li>パワーアップバンド（¥3,800）は事前にアプリ連携で時短</li>
+                    <li>開園直後か閉園前が比較的空いている</li>
+                    <li>キノピオ・カフェは11時前がベスト</li>
+                </ul>
+            </div>
+
+            <a href="https://www.usj.co.jp/web/ja/jp/areas/super-nintendo-world" target="_blank" rel="noopener"
+                class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                USJ公式サイトで詳しく見る
+            </a>
+        </section>
+
+        <!-- ===== DETAIL: HALLOWEEN HORROR ===== -->
+        <section class="page" id="page-detail-horror">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>ハロウィンホラーナイト</h1>
+            </div>
+
+            <div class="detail-hero-img">
+                <img src="images/halloween_horror.png" alt="ハロウィンホラーナイト">
+            </div>
+
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #9b59b6;">期間限定イベント</span>
+                <h2 class="glow-text">恐怖の夜が始まる...</h2>
+                <p>毎年9月から11月にかけて開催されるUSJ最大のハロウィンイベント。日没後、パーク全体がホラー空間に変貌。ストリートゾンビが出没し、特別なホラーアトラクションが稼働します。2026年は5周年記念で例年以上の規模！
+                </p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">attractions</span>
+                <h2>ホラーコンテンツ</h2>
+            </div>
+
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e74c3c;">coronavirus</span>
+                    <div>
+                        <h4>バイオハザード: ナイト・オブ・テラー</h4>
+                        <p>人気ゲームシリーズとのコラボ。リアルなゾンビが徘徊する研究所を歩いて脱出するウォークスルー型ホラー。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #9b59b6;">groups</span>
+                    <div>
+                        <h4>ストリートゾンビ</h4>
+                        <p>パーク内の通りにゾンビが出現！逃げながらもフォトスポットとして大人気。チェーンソーを持ったゾンビには要注意。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e67e22;">music_note</span>
+                    <div>
+                        <h4>ゾンビ・デ・ダンス</h4>
+                        <p>ゾンビたちと一緒に踊るライブエンターテイメント。2026年はゲストDJ「はみくま」が登場する特別版！</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #c0392b;">movie</span>
+                    <div>
+                        <h4>チャッキーのホラー・ファクトリー</h4>
+                        <p>おもちゃ工場をテーマにした恐怖体験。薄暗い工場のなかで不気味な人形たちが待ち受ける...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 楽しむコツ</h3>
+                <ul>
+                    <li>ホラーナイトは18:00スタート（9月の場合）</li>
+                    <li>ホラーアトラクションは専用のエクスプレスパスが別売り</li>
+                    <li>仮装して参加すると盛り上がる！（ルールを事前確認）</li>
+                    <li>怖いのが苦手な方は「NO LIMIT! パレード」側がおすすめ</li>
+                </ul>
+            </div>
+
+            <a href="https://www.usj.co.jp/web/ja/jp" target="_blank" rel="noopener" class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                USJ公式サイトを見る（ハロウィン情報は7月頃公開予定）
+            </a>
+        </section>
+
+        <!-- ===== DETAIL: WIZARDING WORLD ===== -->
+        <section class="page" id="page-detail-wizarding">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>ウィザーディング・ワールド</h1>
+            </div>
+
+            <div class="detail-hero-img">
+                <img src="images/wizarding_world.png" alt="ウィザーディング・ワールド">
+            </div>
+
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #3498db;">魔法の世界</span>
+                <h2 class="glow-text">ホグワーツへようこそ</h2>
+                <p>映画「ハリー・ポッター」の世界を忠実に再現したエリア。圧巻のホグワーツ城を背景に、ホグズミード村の石畳の通りでバタービールを片手に散策できます。杖を使った魔法体験も見逃せません。</p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">attractions</span>
+                <h2>見どころ</h2>
+            </div>
+
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #3498db;">roller_coaster</span>
+                    <div>
+                        <h4>ハリー・ポッター・アンド・ザ・フォービドゥン・ジャーニー</h4>
+                        <p>ホグワーツ城内を冒険するダイナミックなライド。ドラゴンやディメンターとの迫力の遭遇が待つ。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e67e22;">pets</span>
+                    <div>
+                        <h4>フライト・オブ・ザ・ヒッポグリフ</h4>
+                        <p>ヒッポグリフの背に乗って空を滑走するファミリー向けコースター。ハグリッドの小屋の上空を飛行！</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #f39c12;">local_bar</span>
+                    <div>
+                        <h4>三本の箒 & バタービール</h4>
+                        <p>ホグズミード村の人気レストラン。2026年限定のゴールデンバタービール（¥750）は必飲！フィッシュ＆チップスも絶品。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #9b59b6;">auto_fix</span>
+                    <div>
+                        <h4>ワンド・マジック体験</h4>
+                        <p>オリバンダーの店で選ばれた杖（¥5,200）を購入すると、エリア内の特定ポイントで魔法を唱える体験ができます。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 攻略のコツ</h3>
+                <ul>
+                    <li>フォービドゥン・ジャーニーは荷物をロッカーに預ける必要あり</li>
+                    <li>ワンド・マジック体験は夕方以降が雰囲気抜群</li>
+                    <li>三本の箒は11時前か14時以降が比較的空いている</li>
+                    <li>ホグワーツ城のライトアップは日没後が必見</li>
+                </ul>
+            </div>
+
+            <a href="https://www.usj.co.jp/web/ja/jp/areas/the-wizarding-world-of-harry-potter" target="_blank"
+                rel="noopener" class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                USJ公式サイトで詳しく見る
+            </a>
+        </section>
+
+        <!-- ===== DETAIL: OSAKA GOURMET ===== -->
+        <section class="page" id="page-detail-osaka">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>大阪グルメスポット</h1>
+            </div>
+
+            <div class="detail-hero-img">
+                <img src="images/osaka_gourmet.png" alt="道頓堀の夜景">
+            </div>
+
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #e67e22;">天下の台所</span>
+                <h2 class="glow-text">大阪の食を堪能</h2>
+                <p>「食い倒れの街」大阪。道頓堀を中心に、たこ焼き、お好み焼き、串カツなど大阪名物が目白押し。2日目の午後はグルメ三昧の食べ歩きツアーを満喫しましょう！</p>
+            </div>
+
+            <div class="section-header">
+                <span class="material-symbols-rounded">restaurant</span>
+                <h2>おすすめグルメスポット</h2>
+            </div>
+
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #e67e22;">egg_alt</span>
+                    <div>
+                        <h4>くくる（たこ焼き）</h4>
+                        <p>道頓堀の人気たこ焼き店。外はカリッと中はトロトロの明石焼き風たこ焼きが名物。行列必至の大人気店。</p>
+                        <a href="https://www.shirohato.com/kukuru/" target="_blank" rel="noopener"
+                            class="spot-link">公式サイト <span class="material-symbols-rounded">open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #c0392b;">local_pizza</span>
+                    <div>
+                        <h4>美津の（お好み焼き）</h4>
+                        <p>創業80年以上の老舗お好み焼き店。山芋たっぷりのふわふわお好み焼きが絶品。ミシュランビブグルマン掲載店。</p>
+                        <a href="https://www.mizuno-osaka.com/" target="_blank" rel="noopener" class="spot-link">公式サイト
+                            <span class="material-symbols-rounded">open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #3498db;">water</span>
+                    <div>
+                        <h4>海遊館</h4>
+                        <p>世界最大級の水族館。巨大なジンベエザメが泳ぐ太平洋水槽は圧巻。天保山エリアで食事とセットで楽しめます。</p>
+                        <a href="https://www.kaiyukan.com/" target="_blank" rel="noopener" class="spot-link">公式サイト <span
+                                class="material-symbols-rounded">open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #f39c12;">apartment</span>
+                    <div>
+                        <h4>梅田スカイビル 空中庭園</h4>
+                        <p>地上173mの展望台から大阪の360度パノラマビュー。夕暮れ時のサンセットが最高のフォトスポット。</p>
+                        <a href="https://www.skybldg.co.jp/" target="_blank" rel="noopener" class="spot-link">公式サイト
+                            <span class="material-symbols-rounded">open_in_new</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 食べ歩きのコツ</h3>
+                <ul>
+                    <li>道頓堀は昼と夜で雰囲気が全然違う！夜のネオンは必見</li>
+                    <li>グリコの看板前は写真待ちの行列あり、早めの時間が◎</li>
+                    <li>一人前ずつシェアしていろんなお店を回るのがおすすめ</li>
+                    <li>梅田スカイビルは日没30分前に到着がベスト</li>
+                </ul>
+            </div>
+
+            <a href="https://osaka-info.jp/" target="_blank" rel="noopener" class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                大阪観光局公式サイトで詳しく見る
+            </a>
+        </section>
+
+        <!-- ===== PAGE: CHECKLIST ===== -->
+        <section class="page" id="page-checklist">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>持ち物チェックリスト</h1>
+            </div>
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #2ecc71;">9月のUSJ旅行</span>
+                <h2 class="glow-text">忘れ物ゼロで出発！</h2>
+                <p>チェックした項目は自動保存されます。出発前に最終確認を！</p>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">backpack</span>
+                <h2>必須アイテム</h2>
+            </div>
+            <div class="checklist-group" id="checklist-essential">
+                <label class="check-item"><input type="checkbox" data-key="cl-ticket"><span
+                        class="check-mark"></span><span>USJ入場チケット（QRコード）</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-wallet"><span
+                        class="check-mark"></span><span>財布・現金・クレジットカード</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-phone"><span
+                        class="check-mark"></span><span>スマホ・充電器・モバイルバッテリー</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-license"><span
+                        class="check-mark"></span><span>運転免許証・ETC カード</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-insurance"><span
+                        class="check-mark"></span><span>保険証のコピー</span></label>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">sunny</span>
+                <h2>9月の暑さ対策</h2>
+            </div>
+            <div class="checklist-group" id="checklist-summer">
+                <label class="check-item"><input type="checkbox" data-key="cl-sunscreen"><span
+                        class="check-mark"></span><span>日焼け止め（SPF50推奨）</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-hat"><span
+                        class="check-mark"></span><span>帽子・サングラス</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-fan"><span
+                        class="check-mark"></span><span>携帯扇風機・冷却タオル</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-water"><span
+                        class="check-mark"></span><span>水筒（パーク内は500mlペットボトル持込可）</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-umbrella"><span
+                        class="check-mark"></span><span>折りたたみ傘 / レインコート</span></label>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">child_care</span>
+                <h2>子供用（5歳）</h2>
+            </div>
+            <div class="checklist-group" id="checklist-child">
+                <label class="check-item"><input type="checkbox" data-key="cl-clothes"><span
+                        class="check-mark"></span><span>着替え（1〜2セット）</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-snack"><span
+                        class="check-mark"></span><span>おやつ・飲み物</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-toy"><span
+                        class="check-mark"></span><span>待ち時間用のおもちゃ・絵本</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-wipes"><span
+                        class="check-mark"></span><span>ウェットティッシュ・ポケットティッシュ</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-band"><span
+                        class="check-mark"></span><span>パワーアップバンド（現地購入も可）</span></label>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">luggage</span>
+                <h2>あると便利</h2>
+            </div>
+            <div class="checklist-group" id="checklist-optional">
+                <label class="check-item"><input type="checkbox" data-key="cl-bag"><span
+                        class="check-mark"></span><span>エコバッグ（お土産用）</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-cushion"><span
+                        class="check-mark"></span><span>レジャーシート（パレード待ち）</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-camera"><span
+                        class="check-mark"></span><span>カメラ・自撮り棒</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-medicine"><span
+                        class="check-mark"></span><span>常備薬・ばんそうこう</span></label>
+                <label class="check-item"><input type="checkbox" data-key="cl-mask"><span
+                        class="check-mark"></span><span>マスク（予備も）</span></label>
+            </div>
+
+            <button class="cta-button" onclick="resetChecklist()"
+                style="margin-top: 16px; background: var(--bg-card); border: 1px solid var(--border);">
+                <span class="material-symbols-rounded">restart_alt</span> リセット
+            </button>
+        </section>
+
+        <!-- ===== PAGE: BUDGET ===== -->
+        <section class="page" id="page-budget">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>予算サマリー</h1>
+            </div>
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #f39c12;">家族3名の旅費</span>
+                <h2 class="glow-text">旅行費用の全体像</h2>
+                <p>大人2名 + 子供1名（5歳）の総額を一覧表示。</p>
+            </div>
+
+            <div class="budget-total-card glassmorphism">
+                <span class="budget-label">旅行総額（見積もり）</span>
+                <span class="budget-amount" id="budget-total">¥150,000</span>
+                <span class="budget-sublabel">エコノミープラン＋パーク内費用</span>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">receipt_long</span>
+                <h2>内訳</h2>
+            </div>
+            <div class="budget-list" id="budget-list">
+                <div class="budget-category">🚗 交通</div>
+                <div class="budget-row" data-amount="8400"><span>高速料金（往復 ETC）</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥8,400</span></div>
+                <div class="budget-row" data-amount="5000"><span>ガソリン代（往復 約300km）</span><label
+                        class="toggle-switch"><input type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥5,000</span></div>
+                <div class="budget-row" data-amount="3000"><span>駐車場（パーク直結 1日分）</span><label
+                        class="toggle-switch"><input type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥3,000</span></div>
+
+                <div class="budget-category">🏨 宿泊</div>
+                <div class="budget-row" data-amount="10000"><span>ホテル（1泊/1室）</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥10,000</span></div>
+
+                <div class="budget-category">🎫 チケット＋エクスプレスパス</div>
+                <div class="budget-row" data-amount="17200"><span>1デイ・スタジオ・パス 大人×2</span><label
+                        class="toggle-switch"><input type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥17,200</span></div>
+                <div class="budget-row" data-amount="5600"><span>1デイ・スタジオ・パス 子供×1</span><label
+                        class="toggle-switch"><input type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥5,600</span></div>
+                <div class="budget-row" data-amount="25600"><span>エクスプレスパス 大人×2</span><label
+                        class="toggle-switch"><input type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥25,600</span></div>
+                <div class="budget-row" data-amount="12800"><span>エクスプレスパス 子供×1</span><label
+                        class="toggle-switch"><input type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥12,800</span></div>
+
+                <div class="budget-category">🍽️ 食事（概算）</div>
+                <div class="budget-row" data-amount="8000"><span>パーク内ランチ（3名）</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥8,000</span></div>
+                <div class="budget-row" data-amount="10000"><span>ホテルディナー（3名）</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥10,000</span></div>
+                <div class="budget-row" data-amount="5000"><span>2日目ランチ（道頓堀 3名）</span><label
+                        class="toggle-switch"><input type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥5,000</span></div>
+                <div class="budget-row" data-amount="3000"><span>軽食・ドリンク（2日分）</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥3,000</span></div>
+
+                <div class="budget-category">🎡 観光</div>
+                <div class="budget-row" data-amount="4800"><span>海遊館 大人×2</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥4,800</span></div>
+                <div class="budget-row" data-amount="2000"><span>海遊館 子供×1</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥2,000</span></div>
+                <div class="budget-row" data-amount="3000"><span>梅田スカイビル 大人×2</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥3,000</span></div>
+                <div class="budget-row" data-amount="0"><span>梅田スカイビル 子供×1</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">無料</span></div>
+
+                <div class="budget-category">🎮 その他</div>
+                <div class="budget-row" data-amount="3800"><span>パワーアップバンド（子供用）</span><label
+                        class="toggle-switch"><input type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥3,800</span></div>
+                <div class="budget-row" data-amount="8000"><span>お土産・雑費</span><label class="toggle-switch"><input
+                            type="checkbox" checked onchange="recalcBudget()"><span
+                            class="toggle-slider"></span></label><span class="budget-val">¥8,000</span></div>
+
+                <div class="budget-row total"><span>合計</span><span class="budget-val"
+                        id="budget-calc-total">¥164,200</span></div>
+            </div>
+            <p style="font-size: 0.65rem; color: var(--text-muted); margin-top: 4px; padding: 0 4px;">※
+                上記は概算です。実際の料金は変動する場合があります。<br>※ スタンダードプランの場合（¥219,000〜）は別途費用となります。</p>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 節約のコツ</h3>
+                <ul>
+                    <li>ホテル選択で総額が変動（¥7,500〜¥35,000）</li>
+                    <li>パーク内の食事はモバイルオーダーで時短＆計画的に</li>
+                    <li>お土産は公式オンラインストアで事前購入も可能</li>
+                    <li>ETCマイレージ登録で高速料金をお得に</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== PAGE: HEIGHT ===== -->
+        <section class="page" id="page-height">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>身長制限ガイド</h1>
+            </div>
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #e74c3c;">5歳のお子様向け</span>
+                <h2 class="glow-text">乗れるアトラクション早わかり</h2>
+                <p>USJの主要アトラクションの身長制限一覧。5歳（平均身長約108cm）を基準に○×で表示。</p>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">check_circle</span>
+                <h2>乗れる！（制限なし or 92cm〜）</h2>
+            </div>
+            <div class="ride-list">
+                <div class="ride-item ok"><span class="ride-status">○</span>
+                    <div>
+                        <h4>ヨッシー・アドベンチャー</h4>
+                        <p>制限なし（付添い必要）</p>
+                    </div>
+                </div>
+                <div class="ride-item ok"><span class="ride-status">○</span>
+                    <div>
+                        <h4>エルモのゴーゴースケートボード</h4>
+                        <p>制限なし</p>
+                    </div>
+                </div>
+                <div class="ride-item ok"><span class="ride-status">○</span>
+                    <div>
+                        <h4>モッピーのバルーントリップ</h4>
+                        <p>制限なし</p>
+                    </div>
+                </div>
+                <div class="ride-item ok"><span class="ride-status">○</span>
+                    <div>
+                        <h4>ジョーズ</h4>
+                        <p>制限なし（少し怖いかも）</p>
+                    </div>
+                </div>
+                <div class="ride-item ok"><span class="ride-status">○</span>
+                    <div>
+                        <h4>ミニオン・ハチャメチャ・ライド</h4>
+                        <p>制限なし</p>
+                    </div>
+                </div>
+                <div class="ride-item ok"><span class="ride-status">○</span>
+                    <div>
+                        <h4>スペース・ファンタジー・ザ・ライド</h4>
+                        <p>102cm以上 → ○</p>
+                    </div>
+                </div>
+                <div class="ride-item ok"><span class="ride-status">○</span>
+                    <div>
+                        <h4>フライト・オブ・ザ・ヒッポグリフ</h4>
+                        <p>92cm以上 → ○</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">warning</span>
+                <h2>要確認（107cm〜）</h2>
+            </div>
+            <div class="ride-list">
+                <div class="ride-item warn"><span class="ride-status">△</span>
+                    <div>
+                        <h4>マリオカート 〜クッパの挑戦状〜</h4>
+                        <p>107cm以上（ギリギリ！当日の身長確認あり）</p>
+                    </div>
+                </div>
+                <div class="ride-item warn"><span class="ride-status">△</span>
+                    <div>
+                        <h4>ハリー・ポッター・アンド・ザ・フォービドゥン・ジャーニー</h4>
+                        <p>122cm以上 → ✕（身長不足の可能性大）</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">block</span>
+                <h2>乗れない（122cm〜）</h2>
+            </div>
+            <div class="ride-list">
+                <div class="ride-item ng"><span class="ride-status">✕</span>
+                    <div>
+                        <h4>ハリウッド・ドリーム・ザ・ライド</h4>
+                        <p>132cm以上</p>
+                    </div>
+                </div>
+                <div class="ride-item ng"><span class="ride-status">✕</span>
+                    <div>
+                        <h4>ザ・フライング・ダイナソー</h4>
+                        <p>132cm以上</p>
+                    </div>
+                </div>
+                <div class="ride-item ng"><span class="ride-status">✕</span>
+                    <div>
+                        <h4>鬼滅の刃 XRライド</h4>
+                        <p>122cm以上</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> ヒント</h3>
+                <ul>
+                    <li>マリオカートは107cm必要。厚底靴で少し底上げも！</li>
+                    <li>チャイルドスイッチ利用で交代で体験も可能</li>
+                    <li>ニンテンドーワールドはアトラクション以外も楽しい</li>
+                    <li>当日の身長確認は靴を脱いで計測されます</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== PAGE: CROWD ===== -->
+        <section class="page" id="page-crowd">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>混雑予想カレンダー</h1>
+            </div>
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #9b59b6;">2026年9月</span>
+                <h2 class="glow-text">空いてる日を狙おう</h2>
+                <p>過去データから予測した混雑度。ハロウィンイベント開始で後半は混みやすい。</p>
+            </div>
+
+            <div class="crowd-legend">
+                <span class="crowd-dot low">🟢 空き</span>
+                <span class="crowd-dot mid">🟡 普通</span>
+                <span class="crowd-dot high">🔴 混雑</span>
+            </div>
+
+            <div class="crowd-calendar">
+                <div class="cal-header">
+                    <span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span><span>日</span>
+                </div>
+                <div class="cal-row"><span class="cal-day mid">1</span><span class="cal-day low">2</span><span
+                        class="cal-day low">3</span><span class="cal-day low">4</span><span
+                        class="cal-day mid">5</span><span class="cal-day high">6</span><span
+                        class="cal-day high">7</span></div>
+                <div class="cal-row"><span class="cal-day mid">8</span><span class="cal-day low">9</span><span
+                        class="cal-day low">10</span><span class="cal-day low">11</span><span
+                        class="cal-day mid">12</span><span class="cal-day high">13</span><span
+                        class="cal-day high">14</span></div>
+                <div class="cal-row"><span class="cal-day high">15</span><span class="cal-day mid">16</span><span
+                        class="cal-day low">17</span><span class="cal-day low">18</span><span
+                        class="cal-day mid">19</span><span class="cal-day high">20</span><span
+                        class="cal-day high">21</span></div>
+                <div class="cal-row"><span class="cal-day high">22</span><span class="cal-day mid">23</span><span
+                        class="cal-day mid">24</span><span class="cal-day mid">25</span><span
+                        class="cal-day high">26</span><span class="cal-day high">27</span><span
+                        class="cal-day high">28</span></div>
+                <div class="cal-row"><span class="cal-day high">29</span><span class="cal-day mid">30</span><span
+                        class="cal-day empty"></span><span class="cal-day empty"></span><span
+                        class="cal-day empty"></span><span class="cal-day empty"></span><span
+                        class="cal-day empty"></span></div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 混雑攻略</h3>
+                <ul>
+                    <li>9月前半の平日（火〜木）が最も空いている</li>
+                    <li>9/13〜 ハロウィンホラーナイト開始で後半は混雑</li>
+                    <li>シルバーウィーク（9/20〜23）は年間で最も混む時期の1つ</li>
+                    <li>開園30分前には到着、朝イチでニンテンドーワールドへ</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== PAGE: ACCESS ===== -->
+        <section class="page" id="page-access">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>アクセスガイド</h1>
+            </div>
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #3498db;">徳島 → USJ</span>
+                <h2 class="glow-text">ドライブルート案内</h2>
+                <p>高速道路利用で約2時間30分。明石海峡大橋を渡るルートが最短。</p>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">route</span>
+                <h2>ルート詳細</h2>
+            </div>
+            <div class="route-timeline">
+                <div class="route-step">
+                    <div class="route-dot" style="--rc: #2ecc71;"></div>
+                    <div>
+                        <h4>徳島IC</h4>
+                        <p>出発！徳島自動車道に入る</p>
+                    </div>
+                </div>
+                <div class="route-step">
+                    <div class="route-dot" style="--rc: #3498db;"></div>
+                    <div>
+                        <h4>鳴門JCT → 神戸淡路鳴門自動車道</h4>
+                        <p>大鳴門橋を渡って淡路島へ（約30分）</p>
+                    </div>
+                </div>
+                <div class="route-step">
+                    <div class="route-dot" style="--rc: #9b59b6;"></div>
+                    <div>
+                        <h4>明石海峡大橋</h4>
+                        <p>絶景ポイント！天気が良ければ最高のドライブ</p>
+                    </div>
+                </div>
+                <div class="route-step">
+                    <div class="route-dot" style="--rc: #e67e22;"></div>
+                    <div>
+                        <h4>垂水JCT → 阪神高速</h4>
+                        <p>神戸市内を抜けて大阪方面へ（約40分）</p>
+                    </div>
+                </div>
+                <div class="route-step">
+                    <div class="route-dot" style="--rc: #e6304a;"></div>
+                    <div>
+                        <h4>ユニバーサルシティ出口</h4>
+                        <p>到着！パーク周辺駐車場へ（全行程約2時間30分）</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">payments</span>
+                <h2>高速料金</h2>
+            </div>
+            <div class="budget-list">
+                <div class="budget-row"><span>徳島IC → 鳴門JCT</span><span class="budget-val">¥1,200</span></div>
+                <div class="budget-row"><span>鳴門 → 垂水（淡路島横断）</span><span class="budget-val">¥3,500</span></div>
+                <div class="budget-row"><span>阪神高速（垂水→USJ）</span><span class="budget-val">¥1,320</span></div>
+                <div class="budget-row total"><span>片道合計（ETC）</span><span class="budget-val">約 ¥4,200</span></div>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">local_gas_station</span>
+                <h2>おすすめSA/PA</h2>
+            </div>
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #2ecc71;">⛽</span>
+                    <div>
+                        <h4>淡路SA（上り）</h4>
+                        <p>明石海峡大橋を望む絶景SA。淡路玉ねぎバーガーが名物。子供用トイレも完備。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span class="material-symbols-rounded" style="color: #f39c12;">🧅</span>
+                    <div>
+                        <h4>淡路ハイウェイオアシス</h4>
+                        <p>淡路島の特産品が揃うショップ。休憩にぴったりの広い施設。</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://www.google.com/maps/dir/徳島駅/ユニバーサル・スタジオ・ジャパン" target="_blank" rel="noopener"
+                class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                Google マップでルートを見る
+            </a>
+        </section>
+
+        <!-- ===== PAGE: PHOTO ===== -->
+        <section class="page" id="page-photo">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>フォトスポットガイド</h1>
+            </div>
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #e6304a;">撮影ガイド</span>
+                <h2 class="glow-text">映える写真を撮ろう！</h2>
+                <p>パーク内外のベスト撮影スポットと、おすすめの時間帯をガイド。</p>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">photo_camera</span>
+                <h2>パーク内スポット</h2>
+            </div>
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🏰</span>
+                    <div>
+                        <h4>ホグワーツ城</h4>
+                        <p>🕐 夕方16〜17時が逆光にならずベスト。夜のライトアップも必見！エリア入口の橋の上からが定番アングル。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🍄</span>
+                    <div>
+                        <h4>ニンテンドーワールド入口</h4>
+                        <p>🕐 入園直後の朝イチが人少なめ。土管をくぐった瞬間の全景ショットが最高。パワーアップバンドをかざすポーズも◎</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🌍</span>
+                    <div>
+                        <h4>USJ地球儀（エントランス）</h4>
+                        <p>🕐 朝の入場前 or 閉園間際がベスト。フォントが止まるタイミングを狙って。家族写真の定番スポット。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🎃</span>
+                    <div>
+                        <h4>ハロウィン装飾エリア</h4>
+                        <p>🕐 9月後半はパーク全体がハロウィン仕様に。日中のカラフル装飾と夜のホラー装飾、両方撮影チャンス。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">landscape</span>
+                <h2>パーク外スポット</h2>
+            </div>
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🌉</span>
+                    <div>
+                        <h4>明石海峡大橋（ドライブ中）</h4>
+                        <p>🕐 行き帰りのドライブで。助手席から撮影を。淡路SAの展望台からがベストアングル。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🏙️</span>
+                    <div>
+                        <h4>梅田スカイビル空中庭園</h4>
+                        <p>🕐 日没30分前に到着。夕焼け→夜景のマジックアワーが最高。三脚不可だが手すりに置いて撮影可。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> 撮影のコツ</h3>
+                <ul>
+                    <li>スマホなら「ポートレートモード」で背景ボケ写真に</li>
+                    <li>キャラクターグリーティングは開園直後がチャンス</li>
+                    <li>自撮り棒は使用禁止エリアあり（確認を）</li>
+                    <li>パーク内でプロに撮影してもらえる有料サービスも</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== PAGE: SOUVENIR ===== -->
+        <section class="page" id="page-souvenir">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>お土産ガイド</h1>
+            </div>
+            <div class="detail-intro glassmorphism">
+                <span class="detail-badge" style="--badge-color: #e67e22;">2026年おすすめ</span>
+                <h2 class="glow-text">喜ばれるお土産はコレ！</h2>
+                <p>USJと大阪のおすすめお土産を厳選。買い忘れ防止リスト付き。</p>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">redeem</span>
+                <h2>USJパーク内</h2>
+            </div>
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🍪</span>
+                    <div>
+                        <h4>マリオ缶入りクッキー</h4>
+                        <p>スーパーニンテンドーワールド限定。¥1,800。缶がかわいくて実用的、一番人気！</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🧙</span>
+                    <div>
+                        <h4>百味ビーンズ</h4>
+                        <p>ハリポッターエリア限定。¥1,500。鼻くそ味やミミズ味も！？話題性◎のお菓子。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🍌</span>
+                    <div>
+                        <h4>ミニオン・チョコクランチ</h4>
+                        <p>大箱入り。¥1,200。ばらまき土産の定番。個包装で職場や学校にぴったり。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🧢</span>
+                    <div>
+                        <h4>マリオの帽子・カチューシャ</h4>
+                        <p>¥2,300〜¥3,000。パーク内で被って楽しめる＋持ち帰ってもOK。子供用サイズあり。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header"><span class="material-symbols-rounded">location_city</span>
+                <h2>大阪土産</h2>
+            </div>
+            <div class="detail-spots">
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🥟</span>
+                    <div>
+                        <h4>551蓬莱の豚まん</h4>
+                        <p>大阪土産の大定番！持ち帰り用チルドあり。¥520（4個入）。新大阪駅でも購入可。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🍫</span>
+                    <div>
+                        <h4>りくろーおじさんのチーズケーキ</h4>
+                        <p>ふわふわ食感の大阪名物。¥985。焼き立てはお店で、持ち帰り用もあり。</p>
+                    </div>
+                </div>
+                <div class="detail-spot-card">
+                    <span style="font-size: 1.5rem;">🦑</span>
+                    <div>
+                        <h4>たこ昌のたこ焼き（冷凍）</h4>
+                        <p>自宅で大阪の味を再現。¥1,080（12個入）。新大阪駅やお土産店で購入可能。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tips glassmorphism">
+                <h3><span class="material-symbols-rounded">tips_and_updates</span> お土産のコツ</h3>
+                <ul>
+                    <li>パーク内のお土産は閉園間際が大混雑、16時頃に買う</li>
+                    <li>エコバッグ持参でレジ袋代を節約</li>
+                    <li>USJ公式オンラインストアで事前購入→自宅配送も可能</li>
+                    <li>551は新幹線内持込NGの暗黙ルールあり（車なら問題なし！）</li>
+                </ul>
+            </div>
+
+            <a href="https://www.usj.co.jp/web/ja/jp/shopping" target="_blank" rel="noopener" class="official-link-btn">
+                <span class="material-symbols-rounded">open_in_new</span>
+                USJ公式ショップガイドを見る
+            </a>
+        </section>
+
+        <!-- ===== BOTTOM NAV ===== -->
+        <nav class="bottom-nav" id="bottomNav">
+            <button class="nav-item active" onclick="navigateTo('home')" data-page="home">
+                <span class="material-symbols-rounded">home</span>
+                <span>ホーム</span>
+            </button>
+            <button class="nav-item" onclick="navigateTo('plans')" data-page="plans">
+                <span class="material-symbols-rounded">confirmation_number</span>
+                <span>プラン</span>
+            </button>
+            <button class="nav-item" onclick="navigateTo('schedule')" data-page="schedule">
+                <span class="material-symbols-rounded">calendar_month</span>
+                <span>スケジュール</span>
+            </button>
+            <button class="nav-item" onclick="navigateTo('gourmet')" data-page="gourmet">
+                <span class="material-symbols-rounded">restaurant</span>
+                <span>グルメ</span>
+            </button>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
