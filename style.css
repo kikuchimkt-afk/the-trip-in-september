@@ -2545,6 +2545,111 @@ body {
   white-space: pre;
 }
 
+/* Recommend Badge */
+.lp-recommend {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border: 1px solid color-mix(in srgb, #f39c12 30%, transparent);
+}
+
+.lp-recommend .material-symbols-rounded {
+  font-size: 1.4rem;
+  color: #f39c12;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.lp-recommend strong {
+  display: block;
+  font-size: 0.88rem;
+  color: #f39c12;
+  margin-bottom: 4px;
+}
+
+.lp-recommend p {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Route Info */
+.lp-route-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.lp-route-info .material-symbols-rounded {
+  font-size: 1.4rem;
+  color: #3498db;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.lp-route-info strong {
+  display: block;
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+
+.lp-route-info p {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Hotel Selected */
+.lp-hotel-selected {
+  border-color: color-mix(in srgb, #FF6F00 40%, transparent);
+  box-shadow: 0 4px 20px rgba(255, 111, 0, 0.1);
+}
+
+/* Tips List */
+.lp-tips-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.lp-tip-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+
+.lp-tip-item:hover {
+  border-color: color-mix(in srgb, #FF6F00 40%, transparent);
+}
+
+.lp-tip-item .material-symbols-rounded {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.lp-tip-item strong {
+  display: block;
+  font-size: 0.82rem;
+  margin-bottom: 3px;
+}
+
+.lp-tip-item p {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (min-width: 431px) {
   body {
