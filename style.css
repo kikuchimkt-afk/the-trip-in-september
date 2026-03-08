@@ -2047,6 +2047,504 @@ body {
   color: var(--text-muted);
 }
 
+/* ===== LEGO+USJ PLAN PAGE ===== */
+.lp-hero {
+  text-align: center;
+  padding: 28px 20px;
+  margin-bottom: 20px;
+}
+
+.lp-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 5px 16px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #FF6F00, #FFB300);
+  color: #1a1a28;
+  margin-bottom: 12px;
+}
+
+.lp-hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.lp-hero-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.lp-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.lp-meta-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: color-mix(in srgb, #FF6F00 12%, transparent);
+  border: 1px solid color-mix(in srgb, #FF6F00 25%, transparent);
+  border-radius: 16px;
+  padding: 5px 12px;
+  color: #FFB300;
+}
+
+.lp-meta-chip .material-symbols-rounded {
+  font-size: 0.9rem;
+}
+
+/* Plan Tabs */
+.lp-plan-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.lp-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-family: var(--font);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lp-tab .material-symbols-rounded {
+  font-size: 1.1rem;
+}
+
+.lp-tab.active {
+  background: linear-gradient(135deg, #FF6F00, #FFB300);
+  color: #1a1a28;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(255, 111, 0, 0.3);
+}
+
+.lp-tab:hover:not(.active) {
+  border-color: #FF6F00;
+  color: #FFB300;
+}
+
+/* Plan Content */
+.lp-plan-content {
+  display: none;
+}
+
+.lp-plan-content.active {
+  display: block;
+  animation: pageIn 0.4s ease;
+}
+
+/* Pros & Cons */
+.lp-proscons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.lp-pros,
+.lp-cons {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  border: 1px solid var(--border);
+}
+
+.lp-pros h4,
+.lp-cons h4 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.lp-pros h4 {
+  color: #2ecc71;
+}
+
+.lp-cons h4 {
+  color: #e74c3c;
+}
+
+.lp-pros h4 .material-symbols-rounded {
+  font-size: 1rem;
+  color: #2ecc71;
+}
+
+.lp-cons h4 .material-symbols-rounded {
+  font-size: 1rem;
+  color: #e74c3c;
+}
+
+.lp-pros ul,
+.lp-cons ul {
+  list-style: none;
+}
+
+.lp-pros li,
+.lp-cons li {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  padding: 4px 0;
+  line-height: 1.5;
+}
+
+.lp-pros li::before {
+  content: '✓ ';
+  color: #2ecc71;
+  font-weight: 700;
+}
+
+.lp-cons li::before {
+  content: '✗ ';
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+/* Day Header */
+.lp-day-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 24px 0 16px;
+}
+
+.lp-day-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF6F00, #FFB300);
+  color: #1a1a28;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.lp-day-badge.day2 {
+  background: linear-gradient(135deg, #e6304a, #ff7eb3);
+}
+
+.lp-day-header h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.lp-day-header p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Cost Comparison */
+.lp-cost-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.lp-cost-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.lp-cost-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  font-size: 0.78rem;
+}
+
+.lp-cost-header.bus {
+  background: color-mix(in srgb, #3498db 12%, transparent);
+  color: #3498db;
+}
+
+.lp-cost-header.car {
+  background: color-mix(in srgb, #e67e22 12%, transparent);
+  color: #e67e22;
+}
+
+.lp-cost-header .material-symbols-rounded {
+  font-size: 1rem;
+}
+
+.lp-cost-header h4 {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.lp-cost-items {
+  padding: 8px 14px;
+}
+
+.lp-cost-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.lp-cost-row:last-child {
+  border-bottom: none;
+}
+
+.lp-cost-row span:last-child {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.lp-cost-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-top: 2px solid var(--border);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.lp-total-amount {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-light);
+}
+
+/* Cost Diff */
+.lp-cost-diff {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.lp-cost-diff .material-symbols-rounded {
+  font-size: 1.4rem;
+  color: #FF6F00;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.lp-cost-diff strong {
+  display: block;
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+
+.lp-cost-diff p {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Hotel Cards (legoplan) */
+.lp-hotel-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.lp-hotel-card:hover {
+  border-color: color-mix(in srgb, #FF6F00 50%, transparent);
+}
+
+.lp-hotel-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.lp-hotel-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--hc) 15%, transparent);
+  flex-shrink: 0;
+}
+
+.lp-hotel-icon .material-symbols-rounded {
+  color: var(--hc);
+  font-size: 1.2rem;
+}
+
+.lp-hotel-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.lp-hotel-meta h4 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.lp-hotel-area {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.lp-hotel-area .material-symbols-rounded {
+  font-size: 0.85rem;
+}
+
+.lp-hotel-price {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.lp-hp-amount {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-light);
+}
+
+.lp-hp-unit {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.lp-hotel-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.lp-hotel-feat {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  padding: 4px 8px;
+  background: color-mix(in srgb, var(--text-muted) 6%, transparent);
+  border-radius: 6px;
+}
+
+.lp-hotel-feat .material-symbols-rounded {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.lp-hotel-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.lp-hotel-detail-chip {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #FFB300;
+  background: color-mix(in srgb, #FFB300 10%, transparent);
+  border: 1px solid color-mix(in srgb, #FFB300 20%, transparent);
+  border-radius: 12px;
+  padding: 3px 10px;
+}
+
+/* JSON Toggle */
+.lp-json-toggle {
+  margin-bottom: 12px;
+}
+
+.lp-json-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: var(--font);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lp-json-btn:hover {
+  border-color: #FF6F00;
+  color: #FFB300;
+}
+
+.lp-json-arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.lp-json-btn.open .lp-json-arrow {
+  transform: rotate(180deg);
+}
+
+.lp-json-container {
+  margin-bottom: 24px;
+}
+
+.lp-json-code {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  overflow-x: auto;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: #a3e635;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lp-json-code code {
+  white-space: pre;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (min-width: 431px) {
   body {

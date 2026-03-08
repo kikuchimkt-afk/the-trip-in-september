@@ -432,6 +432,29 @@ function resetChecklist() {
   });
 }
 
+// ===== Lego+USJ Plan Tab =====
+function switchLegoTab(tab, btn) {
+  // Hide all plan contents
+  document.querySelectorAll('.lp-plan-content').forEach(c => {
+    c.classList.remove('active');
+  });
+  // Show selected
+  const target = document.getElementById('lp-' + tab);
+  if (target) target.classList.add('active');
+  // Update tabs
+  document.querySelectorAll('.lp-tab').forEach(t => t.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+}
+
+function toggleJsonView() {
+  const container = document.getElementById('lp-json-container');
+  const btn = document.querySelector('.lp-json-btn');
+  if (!container) return;
+  const isHidden = container.style.display === 'none';
+  container.style.display = isHidden ? 'block' : 'none';
+  if (btn) btn.classList.toggle('open', isHidden);
+}
+
 // ===== Init =====
 document.addEventListener('DOMContentLoaded', () => {
   injectAnimationStyles();

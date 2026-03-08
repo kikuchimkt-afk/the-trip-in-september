@@ -72,6 +72,14 @@
                     <p>最高のたこ焼き、お好み焼き、食べ歩きグルメを堪能。</p>
                     <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
                 </div>
+                <div class="highlight-card" style="--accent: #FF6F00;" onclick="navigateTo('legoplan')">
+                    <div class="highlight-icon">
+                        <span class="material-symbols-rounded">extension</span>
+                    </div>
+                    <h3>レゴランド＋USJプラン</h3>
+                    <p>レゴランド大阪＆USJを2日間で満喫する家族旅行プラン。</p>
+                    <span class="card-arrow"><span class="material-symbols-rounded">arrow_forward</span></span>
+                </div>
             </div>
 
             <!-- 旅の準備ツール -->
@@ -108,6 +116,10 @@
                 <div class="tool-card" onclick="navigateTo('souvenir')" style="--tc: #e67e22;">
                     <span class="material-symbols-rounded">redeem</span>
                     <h4>お土産</h4>
+                </div>
+                <div class="tool-card" onclick="navigateTo('legoplan')" style="--tc: #FF6F00;">
+                    <span class="material-symbols-rounded">extension</span>
+                    <h4>レゴ＋USJ</h4>
                 </div>
             </div>
 
@@ -1910,6 +1922,477 @@
                 <span class="material-symbols-rounded">open_in_new</span>
                 USJ公式ショップガイドを見る
             </a>
+        </section>
+
+        <!-- ===== PAGE: LEGO+USJ PLAN ===== -->
+        <section class="page" id="page-legoplan">
+            <div class="page-header">
+                <button class="back-btn" onclick="navigateTo('home')">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                </button>
+                <h1>レゴランド＋USJ プラン</h1>
+            </div>
+
+            <div class="lp-hero glassmorphism">
+                <span class="lp-badge">🧱 Legoland + USJ</span>
+                <h2 class="glow-text">徳島発 大阪1泊家族旅行</h2>
+                <p class="lp-hero-desc">レゴランド大阪（天保山）＆ USJ を2日間で満喫する、徳島発の家族旅行プラン。</p>
+                <div class="lp-meta-row">
+                    <div class="lp-meta-chip">
+                        <span class="material-symbols-rounded">family_restroom</span>
+                        大人2名 + 子供1名（6歳）
+                    </div>
+                    <div class="lp-meta-chip">
+                        <span class="material-symbols-rounded">hotel</span>
+                        2026年9月6日（日）泊
+                    </div>
+                    <div class="lp-meta-chip">
+                        <span class="material-symbols-rounded">savings</span>
+                        ホテル予算 ¥20,000
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Tabs -->
+            <div class="lp-plan-tabs">
+                <button class="lp-tab active" onclick="switchLegoTab('bus', this)">
+                    <span class="material-symbols-rounded">directions_bus</span>
+                    高速バスプラン
+                </button>
+                <button class="lp-tab" onclick="switchLegoTab('car', this)">
+                    <span class="material-symbols-rounded">directions_car</span>
+                    車プラン
+                </button>
+            </div>
+
+            <!-- ========== BUS PLAN ========== -->
+            <div class="lp-plan-content active" id="lp-bus">
+                <div class="lp-proscons">
+                    <div class="lp-pros">
+                        <h4><span class="material-symbols-rounded">thumb_up</span> メリット</h4>
+                        <ul>
+                            <li>運転の疲れがない</li>
+                            <li>USJ直通便を使える場合は移動が楽</li>
+                            <li>駐車場料金がかからない</li>
+                        </ul>
+                    </div>
+                    <div class="lp-cons">
+                        <h4><span class="material-symbols-rounded">thumb_down</span> デメリット</h4>
+                        <ul>
+                            <li>発着時間が決まっているため自由度がやや低い</li>
+                            <li>レゴランド大阪へは乗り換えが必要</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lp-day-header">
+                    <span class="lp-day-badge">DAY 1</span>
+                    <div>
+                        <h3>2026年9月6日（日）</h3>
+                        <p>レゴランド大阪を満喫</p>
+                    </div>
+                </div>
+                <div class="timeline lp-timeline">
+                    <div class="timeline-item" style="--tl-color: #3498db;">
+                        <div class="timeline-time">08:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>徳島出発</h3>
+                            <p>徳島駅発の高速バスで大阪（梅田またはなんば）へ移動</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">directions_bus</span> 徳島駅
+                                → 大阪</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #9b59b6;">
+                        <div class="timeline-time">10:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>大阪着・地下鉄移動</h3>
+                            <p>大阪到着後、地下鉄などで大阪港駅へ移動</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">train</span> 大阪 →
+                                大阪港駅</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #e67e22;">
+                        <div class="timeline-time">11:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>🧱 レゴランド大阪入場</h3>
+                            <p>天保山マーケットプレース内のレゴランド・ディスカバリー・センター大阪で遊ぶ</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">attractions</span>
+                                レゴランド大阪</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #2ecc71;">
+                        <div class="timeline-time">16:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>レゴランド大阪終了</h3>
+                            <p>閉館時間の目安。ホテルの最寄駅へ移動</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">hotel</span> 大阪港駅 →
+                                ホテル最寄駅</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #e6304a;">
+                        <div class="timeline-time">17:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>ホテルチェックイン</h3>
+                            <p>ベイエリアまたは市内ビジネスホテルにチェックイン</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">night_shelter</span>
+                                宿泊ホテル</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lp-day-header">
+                    <span class="lp-day-badge day2">DAY 2</span>
+                    <div>
+                        <h3>2026年9月7日（月）</h3>
+                        <p>USJを1日たっぷり満喫</p>
+                    </div>
+                </div>
+                <div class="timeline lp-timeline">
+                    <div class="timeline-item" style="--tl-color: #f39c12;">
+                        <div class="timeline-time">07:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>起床・朝食</h3>
+                            <p>ホテルで朝食（プランにより有無）</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #3498db;">
+                        <div class="timeline-time">08:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>USJへ移動</h3>
+                            <p>電車でユニバーサルシティ駅へ移動</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">train</span> ホテル →
+                                ユニバーサルシティ駅</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #e6304a;">
+                        <div class="timeline-time">09:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>🎢 USJ入場</h3>
+                            <p>開園時間に合わせて入場し、1日たっぷり遊ぶ</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">attractions</span>
+                                ユニバーサル・スタジオ・ジャパン</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #9b59b6;">
+                        <div class="timeline-time">18:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>USJ発</h3>
+                            <p>USJもしくは大阪駅・なんば発の徳島行き高速バス乗り場へ</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">directions_bus</span> USJ
+                                → バス乗り場</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #2ecc71;">
+                        <div class="timeline-time">20:00〜22:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>徳島へ帰路</h3>
+                            <p>徳島行き高速バスで帰宅</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">home</span> 大阪 → 徳島</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== CAR PLAN ========== -->
+            <div class="lp-plan-content" id="lp-car">
+                <div class="lp-proscons">
+                    <div class="lp-pros">
+                        <h4><span class="material-symbols-rounded">thumb_up</span> メリット</h4>
+                        <ul>
+                            <li>荷物を車に置いて身軽に行動できる</li>
+                            <li>子どもが疲れたらすぐに切り上げられる</li>
+                            <li>バス代と比較して割安になる可能性</li>
+                        </ul>
+                    </div>
+                    <div class="lp-cons">
+                        <h4><span class="material-symbols-rounded">thumb_down</span> デメリット</h4>
+                        <ul>
+                            <li>渋滞の影響を受ける</li>
+                            <li>運転の負担が大きい</li>
+                            <li>高速料金・ガソリン代・駐車場料金がかかる</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lp-day-header">
+                    <span class="lp-day-badge">DAY 1</span>
+                    <div>
+                        <h3>2026年9月6日（日）</h3>
+                        <p>レゴランド大阪を満喫</p>
+                    </div>
+                </div>
+                <div class="timeline lp-timeline">
+                    <div class="timeline-item" style="--tl-color: #3498db;">
+                        <div class="timeline-time">07:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>徳島出発</h3>
+                            <p>自家用車で徳島から神戸淡路鳴門自動車道〜阪神高速経由で大阪へ</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">directions_car</span> 徳島 →
+                                天保山エリア</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #9b59b6;">
+                        <div class="timeline-time">09:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>天保山着・駐車</h3>
+                            <p>天保山周辺の駐車場に車を駐車</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">local_parking</span>
+                                天保山駐車場</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #e67e22;">
+                        <div class="timeline-time">10:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>🧱 レゴランド大阪入場</h3>
+                            <p>天保山マーケットプレース内のレゴランド・ディスカバリー・センター大阪で遊ぶ</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">attractions</span>
+                                レゴランド大阪</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #2ecc71;">
+                        <div class="timeline-time">16:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>レゴランド大阪終了</h3>
+                            <p>閉館時間の目安。ホテルのあるエリアへ車で移動</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">directions_car</span> 天保山
+                                → ホテル周辺</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #e6304a;">
+                        <div class="timeline-time">17:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>ホテルチェックイン</h3>
+                            <p>ベイエリアまたは市内ホテルにチェックイン</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">night_shelter</span>
+                                宿泊ホテル</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lp-day-header">
+                    <span class="lp-day-badge day2">DAY 2</span>
+                    <div>
+                        <h3>2026年9月7日（月）</h3>
+                        <p>USJを1日たっぷり満喫</p>
+                    </div>
+                </div>
+                <div class="timeline lp-timeline">
+                    <div class="timeline-item" style="--tl-color: #f39c12;">
+                        <div class="timeline-time">07:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>起床・朝食</h3>
+                            <p>ホテルで朝食</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #3498db;">
+                        <div class="timeline-time">08:30</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>USJへ移動</h3>
+                            <p>自家用車でUSJへ移動（またはホテル駐車のまま電車移動も可）</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">directions_car</span> ホテル
+                                → USJ</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #e6304a;">
+                        <div class="timeline-time">09:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>🎢 USJ入場</h3>
+                            <p>開園時間に合わせて入場し、夕方まで遊ぶ</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">attractions</span>
+                                ユニバーサル・スタジオ・ジャパン</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #9b59b6;">
+                        <div class="timeline-time">17:00〜18:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>USJ出発</h3>
+                            <p>USJ駐車場から徳島へ向けて出発</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">directions_car</span> USJ
+                                → 徳島</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--tl-color: #2ecc71;">
+                        <div class="timeline-time">20:00〜22:00</div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>徳島着</h3>
+                            <p>徳島到着・解散</p>
+                            <span class="timeline-tag"><span class="material-symbols-rounded">home</span> 到着</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== COST COMPARISON ========== -->
+            <div class="section-header">
+                <span class="material-symbols-rounded">account_balance_wallet</span>
+                <h2>費用比較（概算）</h2>
+            </div>
+
+            <div class="lp-cost-compare">
+                <div class="lp-cost-card">
+                    <div class="lp-cost-header bus">
+                        <span class="material-symbols-rounded">directions_bus</span>
+                        <h4>高速バスプラン</h4>
+                    </div>
+                    <div class="lp-cost-items">
+                        <div class="lp-cost-row"><span>高速バス往復</span><span>¥11,000</span></div>
+                        <div class="lp-cost-row"><span>ホテル1泊（家族3人）</span><span>¥20,000</span></div>
+                        <div class="lp-cost-row"><span>レゴランド大阪 入場</span><span>¥19,000</span></div>
+                        <div class="lp-cost-row"><span>USJ 1デイパス</span><span>¥19,000</span></div>
+                    </div>
+                    <div class="lp-cost-total">
+                        <span>合計（概算）</span>
+                        <span class="lp-total-amount">¥69,000</span>
+                    </div>
+                </div>
+
+                <div class="lp-cost-card">
+                    <div class="lp-cost-header car">
+                        <span class="material-symbols-rounded">directions_car</span>
+                        <h4>車プラン</h4>
+                    </div>
+                    <div class="lp-cost-items">
+                        <div class="lp-cost-row"><span>高速料金往復</span><span>¥6,000</span></div>
+                        <div class="lp-cost-row"><span>ガソリン代</span><span>¥3,000</span></div>
+                        <div class="lp-cost-row"><span>駐車場代（天保山＋USJ等）</span><span>¥7,500</span></div>
+                        <div class="lp-cost-row"><span>ホテル1泊（家族3人）</span><span>¥20,000</span></div>
+                        <div class="lp-cost-row"><span>レゴランド大阪 入場</span><span>¥19,000</span></div>
+                        <div class="lp-cost-row"><span>USJ 1デイパス</span><span>¥19,000</span></div>
+                    </div>
+                    <div class="lp-cost-total">
+                        <span>合計（概算）</span>
+                        <span class="lp-total-amount">¥74,500</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lp-cost-diff glassmorphism">
+                <span class="material-symbols-rounded">compare_arrows</span>
+                <div>
+                    <strong>差額は約 ¥5,500</strong>
+                    <p>高速バスプランの方がやや安い。ただし車プランは自由度が高く、荷物管理が楽というメリットあり。</p>
+                </div>
+            </div>
+
+            <!-- ========== HOTEL CANDIDATES ========== -->
+            <div class="section-header">
+                <span class="material-symbols-rounded">hotel</span>
+                <h2>ホテル候補</h2>
+            </div>
+
+            <div class="lp-hotel-card">
+                <div class="lp-hotel-header">
+                    <div class="lp-hotel-icon" style="--hc: #3498db;">
+                        <span class="material-symbols-rounded">apartment</span>
+                    </div>
+                    <div class="lp-hotel-meta">
+                        <h4>ベイエリア周辺ホテルA</h4>
+                        <span class="lp-hotel-area"><span class="material-symbols-rounded">location_on</span> 弁天町</span>
+                    </div>
+                    <div class="lp-hotel-price">
+                        <span class="lp-hp-amount">¥18,000</span>
+                        <span class="lp-hp-unit">/泊</span>
+                    </div>
+                </div>
+                <div class="lp-hotel-features">
+                    <span class="lp-hotel-feat"><span class="material-symbols-rounded">attractions</span> レゴランドまで電車
+                        約15〜20分</span>
+                    <span class="lp-hotel-feat"><span class="material-symbols-rounded">train</span> USJまで電車
+                        約15〜20分</span>
+                </div>
+                <div class="lp-hotel-details">
+                    <div class="lp-hotel-detail-chip">ツイン＋添い寝</div>
+                    <div class="lp-hotel-detail-chip">素泊まり or 朝食付き</div>
+                    <div class="lp-hotel-detail-chip">小学生添い寝無料プラン有り</div>
+                </div>
+            </div>
+
+            <div class="lp-hotel-card">
+                <div class="lp-hotel-header">
+                    <div class="lp-hotel-icon" style="--hc: #e67e22;">
+                        <span class="material-symbols-rounded">location_city</span>
+                    </div>
+                    <div class="lp-hotel-meta">
+                        <h4>USJ周辺ビジネスホテルB</h4>
+                        <span class="lp-hotel-area"><span class="material-symbols-rounded">location_on</span>
+                            ユニバーサルシティ周辺</span>
+                    </div>
+                    <div class="lp-hotel-price">
+                        <span class="lp-hp-amount">¥20,000</span>
+                        <span class="lp-hp-unit">/泊</span>
+                    </div>
+                </div>
+                <div class="lp-hotel-features">
+                    <span class="lp-hotel-feat"><span class="material-symbols-rounded">attractions</span> レゴランドまで電車
+                        約30分</span>
+                    <span class="lp-hotel-feat"><span class="material-symbols-rounded">directions_walk</span>
+                        USJまで徒歩圏内</span>
+                </div>
+                <div class="lp-hotel-details">
+                    <div class="lp-hotel-detail-chip">ツイン＋エキストラベッド</div>
+                    <div class="lp-hotel-detail-chip">素泊まり</div>
+                    <div class="lp-hotel-detail-chip">小学生添い寝可（条件あり）</div>
+                </div>
+            </div>
+
+            <!-- ========== JSON DATA ========== -->
+            <div class="section-header">
+                <span class="material-symbols-rounded">data_object</span>
+                <h2>構造化データ（JSON）</h2>
+            </div>
+
+            <div class="lp-json-toggle">
+                <button class="lp-json-btn" onclick="toggleJsonView()">
+                    <span class="material-symbols-rounded">code</span>
+                    JSONデータを表示
+                    <span class="material-symbols-rounded lp-json-arrow">expand_more</span>
+                </button>
+            </div>
+
+            <div class="lp-json-container" id="lp-json-container" style="display:none;">
+                <pre class="lp-json-code"><code>{
+  "meta": {
+    "tripTitle": "徳島発 大阪1泊家族旅行（レゴランド大阪＋USJ）",
+    "members": { "adults": 2, "children": 1, "childAge": 6 },
+    "departureArea": "徳島",
+    "destinationArea": "大阪",
+    "stayDate": "2026-09-06",
+    "nights": 1,
+    "mainSpots": ["レゴランド大阪（天保山）", "USJ"],
+    "hotelBudget": 20000,
+    "hotelBudgetCurrency": "JPY"
+  },
+  "plans": [
+    { "transportType": "高速バス", "totalEstimate": 69000 },
+    { "transportType": "自家用車", "totalEstimate": 74500 }
+  ],
+  "costModel": { "currency": "JPY" },
+  "hotels": [
+    { "name": "ベイエリア周辺ホテルA", "area": "弁天町", "pricePerNight": 18000 },
+    { "name": "USJ周辺ビジネスホテルB", "area": "ユニバーサルシティ周辺", "pricePerNight": 20000 }
+  ]
+}</code></pre>
+            </div>
         </section>
 
         <!-- ===== BOTTOM NAV ===== -->
